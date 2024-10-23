@@ -5,13 +5,22 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-            <link rel="stylesheet" href="templates\Static">
+            <link rel="stylesheet" href="/static/app.css">
 		<title>{% block title %}{%endblock%}</title>
 	</head>
 	<body>
-		<h1>{% block h1 %}{%endblock%}</h1>
-		<nav>PRETEND NAV</nav>
+		
+		<nav class="navbar">
+            <a href="/">HOME</a>
+            <a href="/form">FORM</a>
+            <a href="/form-2">FORM 2</a>
+            <a href="/spell/">Spell</a>
+        </nav><br>
+        <h1>{% block h1 %}{%endblock%}</h1>
+		<main id="content">
 		{% block content %}{%endblock%}
-		<footer>PRETEND A FOOT, DO</footer>
+		<footer>PRETEND A FOOT, DO THING</footer>
+		</main>
+        <script src="/static/app.js"></script>
 	</body>
 </html>

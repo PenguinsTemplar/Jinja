@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>Jinja Testing</title>
-	</head>
-	<h1>Gotta have something here</h1>
-	<body></body>
-</html>
+{% extends 'base.html' %} 
+
+{% block title %} Home
+{% endblock %}
+{% block content %}
+<h1>So... it's home</h1>
+{% endblock %}
